@@ -2,6 +2,9 @@ import axios from "axios";
 import { popUpActions } from "./pop-up-slice";
 import { mailBoxActions } from "./mail-box-slice";
 
+
+//getting data from firebase
+
 export const getData = () => {
   return async (dispatch) => {
     let email = localStorage.getItem("email");
