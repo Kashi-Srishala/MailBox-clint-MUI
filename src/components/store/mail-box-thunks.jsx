@@ -36,7 +36,7 @@ export const getData = () => {
 export const putData = (mailBox) => {
   return async (dispatch) => {
     let email = localStorage.getItem("email");
-
+    //Post reuest for firebase
     if (email) {
       email = email.replace("@", "").replace(".", "");
       let requestBody = { ...mailBox.allMailData };
