@@ -6,7 +6,8 @@ const authenticateUser = (user) => {
   return async (dispatch) => {
     let url = "";
     let requestBody = {};
-
+ 
+    // firebase authantication data credencials
     if (user.isSignUp) {
       url =
         "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyAVIbdHb1HjOT4pjxuuD7s0sq-EzzC1uQo";
