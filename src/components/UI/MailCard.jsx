@@ -33,6 +33,7 @@ const MailCard = (props) => {
     return mailData;
   }
 
+  // Delete button handler
   function deleteHandler() {
     if (window.confirm("Are you sure, you want to delete it")) {
       let mailData = getMailObject();
